@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 原有资源 -->
+	<link rel="stylesheet" href="./common/front/css/css.css">
+	<link rel="stylesheet" href="./common/front/css/index.css">
+	<link rel="stylesheet" href="./resource/front/css/account.css">
+	<script src="./common/front/js/jquery-1.9.1.min.js"></script>
+	<!-- 结束 --> 
+	<!-- 需要额外添加 -->
+ 	<link rel="stylesheet" href="./common/thirdParty/pikaday/pikaday.css">
+ 	<!-- 结束 -->
+</head>
+<body>
+	<div class="acc_center">
+		<ul class="expmenu">
+	        <li>
+	            <div class="li-header" id="li_1">
+	            	<a href="javascript:;">资金管理<span class="arrow down"></span>
+	                    <b><img src="./common/front/images/rf/act-icon1.png"></b>
+	                </a>
+	            </div>
+	            <ul class="menu">
+	                <li><a href="/account/bankCard.do" id="li_1_1">银行账户</a></li>
+	                <li><a href="/account/goBankCard.do" id="li_1_2">添加银行卡</a></li>
+	                <li><a href="/account/xscz.do" id="li_1_3">账户充值</a></li>
+	                <li><a href="/account/rechargeValue.do" id="li_1_4">充值记录</a></li>
+	                <li><a href="/account/tx.do" id="li_1_5">账户提现</a></li>
+	                <li><a href="/account/cashValue.do" id="li_1_6">提现记录</a></li>
+	                <li><a href="/basics/creditLog.do?type=jsp" id="li_1_7">积分明细</a></li>
+	                <li><a href="/usrOrder/orderList.do" id="li_1_8">积分订单</a></li>
+	            </ul>
+	        </li>       
+	        <li>
+	            <div class="li-header" id="li_2">
+	                <span>理财管理</span>
+	                <span class="arrow up"></span>
+	                <b><img src="./common/front/images/rf/act-icon2.png"></b>
+	            </div>
+	            <ul class="menu">
+	                <li class=""><a href="/iborrow/investIng.do" id="li_2_1">投标中项目</a></li>
+	                <li class=""><a href="/iborrow/investSuccess.do" id="li_2_2">收款中项目</a></li>
+	                <li class=""><a href="/invest/getRepByStatus.do" id="li_2_3">逾期明细</a></li>
+	                <li class=""><a href="/iborrow/repayedTender.do" id="li_2_4">已收款明细</a></li>
+	                <li class=""><a href="/iborrow/repossessed.do" id="li_2_5">借出明细</a></li>
+	                <li class=""><a href="/invest/inRepayed.do" id="li_2_6">已还清项目</a></li>
+	                <li class=""><a href="/account/userBorrowTransfer.do" id="li_2_7">债权转让</a></li>
+	            </ul>
+	        </li>
+	        <li>
+	            <div class="li-header" id="li_3">
+	                <span>借款管理</span>
+	                <span class="arrow down"></span>
+	                <b><img src="./common/front/images/rf/act-icon3.png"></b>
+	            </div>
+	            <ul class="menu">
+	                <li><a href="/iborrow/borrowStatus1.do" id="li_3_2">初审待审项目</a></li>
+	                <li><a href="/iborrow/borrowStatus.do" id="li_3_1">招标中项目</a></li>
+	                <li><a href="/iborrow/fullBorrow.do" id="li_3_6">满标待审项目</a></li>
+	                <li><a href="/iborrow/borrowStatus2.do" id="li_3_3">还款中项目</a></li>
+	                <li><a href="/iborrow/borrowStatus3.do" id="li_3_4">已还款项目</a></li>
+	                <li><a href="/verify/evaluateApply.do" id="li_3_5">授信额度</a></li>                
+	            </ul>
+	        </li>
+	        <li>
+	            <div class="li-header" id="li_4">
+	                <span>基本设置</span>
+	                <span class="arrow down"></span>
+	                <b><img src="./common/front/images/rf/act-icon4.png"></b>
+	            </div>
+	            <ul class="menu">
+	                
+	                <li><a href="/basics/userFriend.do" id="li_4_2">好友中心</a></li>
+	                <li><a href="/basics/privates.do" id="li_4_3">个人资料</a></li>
+	                <li><a href="/basics/inbox.do" id="li_4_4">站内信</a></li>
+	               
+	            </ul>
+	        </li>
+
+	        <!-- 这里插入了一段li -->
+	        <li>
+	        	<div class="li-header" id="li_6">
+	        		<span>我的推广</span>
+	        		<span class="arrow down"></span>
+	        		<b><img src="./common/front/images/rf/act-icon6.png"></b>
+	        	</div>
+	        	<ul class="menu" style="display: block;">
+	        		<li><a href="./account-spread.html">我的推广</a></li>
+	        		<li><a href="./account-spreadlist.html">推广记录</a></li>
+	        	</ul>
+	        </li>
+	        <!-- 这里结束 -->
+	        <li>
+	            <div class="li-header" id="li_5">
+	                <span>安全中心</span>
+	                <span class="arrow down"></span>
+	                <b><img src="./common/front/images/rf/act-icon5.png"></b>
+	            </div>
+	            <ul class="menu">
+	                <li><a href="/verify/saveUserLoginPass.do" id="li_5_1">修改登录密码</a></li>
+	              <!--   <li><a href="修改交易密码.html">修改交易密码</a></li>
+	                <li><a href="重置交易密码.html">重置交易密码</a></li> -->
+	            </ul>
+	        </li>      
+    	</ul>
+		
+		<div class="acc_right">
+			<div class="setInfo fr">
+				<div class="hf_spread_mian">
+					<h1 class="hf_spread_title">推广记录</h1>
+					<form action="#" class="hf_spreadlist_form">
+						<input type="text" id="hf_data_start" class="hf_spread_input" placeholder="起始日期">
+						<input type="text" id="hf_data_end" class="hf_spread_input" placeholder="结束日期">
+						<input type="text" class="hf_spread_input" placeholder="用户名">
+						<button type="submit" class="hf_spread_button hf_spread_search">搜索</button>
+					</form>
+				</div>
+				
+
+				<table class="hf_spread_table hf_spread_list" style="border-collapse:collapse">
+					<thead>
+						<tr>
+							<th style="width:10%">姓名</th>
+							<th style="width:20%">时间</th>
+							<th>备注</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>姓名</td>
+							<td>2016-05-30 <br>12:34:17</td>
+							<td style="text-align:left; padding-left:30px;">
+								<p>推广客户[王静]投资[襄阳农业担保——单季盈13期]51062.51元成功所得的推广费用。</p>
+								<p>（本金：50000元 | 利息：1062.51元）</p>
+							</td>
+						</tr>
+						<tr>
+							<td>姓名</td>
+							<td>2016-05-30 <br>12:34:17</td>
+							<td style="text-align:left; padding-left:30px;">
+								<p>推广客户[王静]投资[襄阳农业担保——单季盈13期]51062.51元成功所得的推广费用。</p>
+								<p>（本金：50000元 | 利息：1062.51元）</p>
+							</td>
+						</tr>
+						<tr>
+							<td>姓名</td>
+							<td>2016-05-30 <br>12:34:17</td>
+							<td style="text-align:left; padding-left:30px;">
+								<p>推广客户[王静]投资[襄阳农业担保——单季盈13期]51062.51元成功所得的推广费用。</p>
+								<p>（本金：50000元 | 利息：1062.51元）</p>
+							</td>
+						</tr>
+						<tr>
+							<td>姓名</td>
+							<td>2016-05-30 <br>12:34:17</td>
+							<td style="text-align:left; padding-left:30px;">
+								<p>推广客户[王静]投资[襄阳农业担保——单季盈13期]51062.51元成功所得的推广费用。</p>
+								<p>（本金：50000元 | 利息：1062.51元）</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="hf_spread_page">
+    				<a href="javascript:;" class="hf_page-dis">&lt;</a>
+				    <a href="#">1</a>
+				    <a href="#" class="hf_page_crt">2</a>
+				    <a href="#">3</a>
+				    <a href="#">4</a>
+                    <i herf="#">...</i>
+				    <a href="#" class="hf_page-dis">5</a>
+				    <a href="javascript:;" >&gt;</a>
+    			</div>
+			</div>
+		</div>
+
+		<script src="./common/front/js/m-placeholder.js"></script>
+	    <script src="./common/thirdParty/pikaday/pikaday.min.js"></script>
+ 		<script>
+ 	   		/*我的账户导航滑动/展开 */
+ 	   	$(function() {
+ 	   		$("ul.expmenu li > div.li-header").click(function(){                                                  
+ 	   		    var arrow = $(this).find("span.arrow"); 
+ 	   		    if(arrow.hasClass("up")){
+ 	   		        arrow.removeClass("up");
+ 	   		        arrow.addClass("down");
+ 	   		    }else if(arrow.hasClass("down")){
+ 	   		        arrow.removeClass("down");
+ 	   		        arrow.addClass("up");
+ 	   		    }   
+ 	   		    $(this).parent().find("ul.menu").slideToggle();     
+ 	   		}); 
+ 	   		var leftNav = $("#leftNav").val();
+ 	   		var leftTitle=$("#leftTitle").val();
+ 	   		$("#"+leftNav).find("span").removeClass("down");
+ 	   		$("#"+leftNav).find("span").addClass("up");
+ 	   		$("#"+leftTitle).css("color","#11A2FE");
+ 	   		$("#"+leftNav).parent().find("ul.menu").show();
+
+ 	   		// 启示日期
+ 	   		new Pikaday(
+ 	   		    {
+ 	   		        field: document.getElementById('hf_data_start'),
+ 	   		        firstDay: 1,
+ 	   		        minDate: new Date('2013-01-01'),
+ 	   		        maxDate: new Date('2020-12-31'),
+ 	   		        yearRange: [2000,2020]
+ 	   		});
+ 	   		// 结束日期
+ 	   		new Pikaday(
+ 	   		    {
+ 	   		        field: document.getElementById('hf_data_end'),
+ 	   		        firstDay: 1,
+ 	   		        minDate: new Date('2010-01-01'),
+ 	   		        maxDate: new Date('2020-12-31'),
+ 	   		        yearRange: [2000,2020]
+ 	   		});
+
+ 	   	});
+ 		  
+
+ 		</script>
+    	</body>
+</html>

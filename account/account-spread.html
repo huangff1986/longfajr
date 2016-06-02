@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <!-- 原有资源 -->
+    <link rel="stylesheet" href="./common/front/css/css.css">
+    <link rel="stylesheet" href="./common/front/css/index.css">
+    <link rel="stylesheet" href="./resource/front/css/account.css">
+    <script src="./common/front/js/jquery-1.9.1.min.js"></script>
+    <!-- 结束 -->
+</head>
+<body>
+	<div class="acc_center">
+		<ul class="expmenu">
+	        <li>
+	            <div class="li-header" id="li_1">
+	            	<a href="javascript:;">资金管理<span class="arrow down"></span>
+	                    <b><img src="./common/front/images/rf/act-icon1.png"></b>
+	                </a>
+	            </div>
+	            <ul class="menu">
+	                <li><a href="/account/bankCard.do" id="li_1_1">银行账户</a></li>
+	                <li><a href="/account/goBankCard.do" id="li_1_2">添加银行卡</a></li>
+	                <li><a href="/account/xscz.do" id="li_1_3">账户充值</a></li>
+	                <li><a href="/account/rechargeValue.do" id="li_1_4">充值记录</a></li>
+	                <li><a href="/account/tx.do" id="li_1_5">账户提现</a></li>
+	                <li><a href="/account/cashValue.do" id="li_1_6">提现记录</a></li>
+	                <li><a href="/basics/creditLog.do?type=jsp" id="li_1_7">积分明细</a></li>
+	                <li><a href="/usrOrder/orderList.do" id="li_1_8">积分订单</a></li>
+	            </ul>
+	        </li>       
+	        <li>
+	            <div class="li-header" id="li_2">
+	                <span>理财管理</span>
+	                <span class="arrow up"></span>
+	                <b><img src="./common/front/images/rf/act-icon2.png"></b>
+	            </div>
+	            <ul class="menu">
+	                <li class=""><a href="/iborrow/investIng.do" id="li_2_1">投标中项目</a></li>
+	                <li class=""><a href="/iborrow/investSuccess.do" id="li_2_2">收款中项目</a></li>
+	                <li class=""><a href="/invest/getRepByStatus.do" id="li_2_3">逾期明细</a></li>
+	                <li class=""><a href="/iborrow/repayedTender.do" id="li_2_4">已收款明细</a></li>
+	                <li class=""><a href="/iborrow/repossessed.do" id="li_2_5">借出明细</a></li>
+	                <li class=""><a href="/invest/inRepayed.do" id="li_2_6">已还清项目</a></li>
+	                <li class=""><a href="/account/userBorrowTransfer.do" id="li_2_7">债权转让</a></li>
+	            </ul>
+	        </li>
+	        <li>
+	            <div class="li-header" id="li_3">
+	                <span>借款管理</span>
+	                <span class="arrow down"></span>
+	                <b><img src="./common/front/images/rf/act-icon3.png"></b>
+	            </div>
+	            <ul class="menu">
+	                <li><a href="/iborrow/borrowStatus1.do" id="li_3_2">初审待审项目</a></li>
+	                <li><a href="/iborrow/borrowStatus.do" id="li_3_1">招标中项目</a></li>
+	                <li><a href="/iborrow/fullBorrow.do" id="li_3_6">满标待审项目</a></li>
+	                <li><a href="/iborrow/borrowStatus2.do" id="li_3_3">还款中项目</a></li>
+	                <li><a href="/iborrow/borrowStatus3.do" id="li_3_4">已还款项目</a></li>
+	                <li><a href="/verify/evaluateApply.do" id="li_3_5">授信额度</a></li>                
+	            </ul>
+	        </li>
+	        <li>
+	            <div class="li-header" id="li_4">
+	                <span>基本设置</span>
+	                <span class="arrow down"></span>
+	                <b><img src="./common/front/images/rf/act-icon4.png"></b>
+	            </div>
+	            <ul class="menu">
+	                
+	                <li><a href="/basics/userFriend.do" id="li_4_2">好友中心</a></li>
+	                <li><a href="/basics/privates.do" id="li_4_3">个人资料</a></li>
+	                <li><a href="/basics/inbox.do" id="li_4_4">站内信</a></li>
+	               
+	            </ul>
+	        </li>
+
+	        <!-- 这里插入了一段li -->
+	        <li>
+	        	<div class="li-header" id="li_6">
+	        		<span>我的推广</span>
+	        		<span class="arrow down"></span>
+	        		<b><img src="./common/front/images/rf/act-icon6.png"></b>
+	        	</div>
+	        	<ul class="menu" style="display: block;">
+	        		<li><a href="./account-spread.html">我的推广</a></li>
+	        		<li><a href="./account-spreadlist.html">推广记录</a></li>
+	        	</ul>
+	        </li>
+	        <!-- 这里结束 -->
+
+	        <li>
+	            <div class="li-header" id="li_5">
+	                <span>安全中心</span>
+	                <span class="arrow down"></span>
+	                <b><img src="./common/front/images/rf/act-icon5.png"></b>
+	            </div>
+	            <ul class="menu">
+	                <li><a href="/verify/saveUserLoginPass.do" id="li_5_1">修改登录密码</a></li>
+	              <!--   <li><a href="修改交易密码.html">修改交易密码</a></li>
+	                <li><a href="重置交易密码.html">重置交易密码</a></li> -->
+	            </ul>
+	        </li>      
+    	</ul>
+
+
+    	<div class="acc_right">
+    		<div class="setInfo fr">
+    			<div class="hf_spread_mian">
+    				<h1 class="hf_spread_title">推广方式</h1>
+    				<div class="hf_spread_s1">
+    					<h3 class="hf_spread_subtit">
+    						<span class="hf_spread_subnum"></span>
+    						发送下面的邀请链接给好朋友或其他朋友(建议不要发送给不熟悉的人士)，通过此链接，注册成功即可成为你的推广客户。
+    						
+    					</h3>
+    				
+  						<!-- 链接地址 -->  					 
+    					<p>
+                邀请链接
+                <input id="hf_spread_link" type="text" value="https://www.longfajr.com:443/toRegister.do?u=861142 " >
+                <button herf="javascript:;" id="btn_copyLink">复制链接</button>
+              </p>
+    				</div>
+    				<div class="hf_spread_warp clear">
+    					<div class="hf_spread_s2">
+    						<h3 class="hf_spread_subtit">
+    							<span class="hf_spread_subnum"></span>
+    							好友注册时在“填写推荐人”时，填写您的用户名，注册成功即可成为您的推广。如下图：
+    						</h3>
+                            <!-- 数据-邀请链接 -->
+    						<img src="./resource/front/images/rf/hf_yqm.jpg" alt="推荐人填写方式">
+    					</div>
+    					<div class="hf_spread_s3">
+    						<h3 class="hf_spread_subtit">
+    							<span class="hf_spread_subnum"></span>
+    							推荐好友扫描二维码
+    						</h3>
+    						<p>
+                                <!-- 数据-二维码 -->
+    							<img src="./resource/front/images/rf/hf_QR.jpg" alt="二维码">
+                                <!-- 数据-邀请码 -->
+    							(你的推荐码 : <span id="hf_tjm">941345</span>)
+    						</p>
+    					</div>
+    				</div>    				
+    			</div>
+    			<div class="hf_spread_caption">
+    				<h3>推广奖励说明</h3>
+    				<ol>
+    					<li>1、邀请好友或其他朋友注册成功，即可建立推广关系</li>
+    					<li>2、好友或其他朋友投资成功，系统将自动更具投资推广抽成比例给予奖励</li>
+    					<li>3、从2016年1月13日起，推广奖励将以积分形式发放。</li>
+    				</ol>
+    			</div>
+    			<div class="hf_spread_list">
+    				<h3>我的推广</h3>
+    				<form class="clear" class="hf_spread_form">
+                        <!-- 数据-邀请人数 -->
+    					<span class="hf_spread_r">邀请人数 : <span class="hf_spread_count">54</span>人</span>
+    					<button type="submit" id="hf_spread_submit">搜索</button>
+    					<input type="text" class="hf_spread_input" placeholder="用户名">
+    				</form>
+                    <!-- 数据-推广列表 -->
+    				<table class="hf_spread_table" style="border-collapse:collapse">
+    					<thead>
+    						<tr>
+    							<th>序号</th>
+    							<th>姓名</th>
+    							<th>电话</th>
+    							<th>提现总额</th>
+    							<th>投资总额</th>
+    							<th>操作</th>
+    						</tr>
+    					</thead>
+    					<tbody>
+    						<tr>
+    							<td>1</td>
+    							<td>黄非</td>
+    							<td>1387515264</td>
+    							<td>123456789</td>
+    							<td>0</td>
+    							<td><a href="#">详细</a></td>
+    						</tr>
+    						<tr>
+    							<td>2</td>
+    							<td>黄非</td>
+    							<td>1387515264</td>
+    							<td>123456789</td>
+    							<td>0</td>
+    							<td><a href="#">详细</a></td>
+    						</tr>
+    						<tr>
+    							<td>3</td>
+    							<td>黄非</td>
+    							<td>1387515264</td>
+    							<td>123456789</td>
+    							<td>0</td>
+    							<td><a href="#">详细</a></td>
+    						</tr>
+    						<tr>
+    							<td>4</td>
+    							<td>黄非</td>
+    							<td>1387515264</td>
+    							<td>123456789</td>
+    							<td>0</td>
+    							<td><a href="#">详细</a></td>
+    						</tr>
+    						<tr>
+    							<td>5</td>
+    							<td>黄非</td>
+    							<td>1387515264</td>
+    							<td>123456789</td>
+    							<td>0</td>
+    							<td><a href="#">详细</a></td>
+    						</tr>
+    					</tbody>
+    				</table>
+    			</div>
+                <!-- 数据-翻页器 -->
+    			<div class="hf_spread_page">
+    				<a href="javascript:;" class="hf_page-dis">&lt;</a>
+				    <a href="#">1</a>
+				    <a href="#" class="hf_page_crt">2</a>
+				    <a href="#">3</a>
+				    <a href="#">4</a>
+                    <i herf="#">...</i>
+				    <a href="#" class="hf_page-dis">5</a>
+				    <a href="javascript:;" >&gt;</a>
+    			</div>
+    		</div>
+    	</div>
+	</div>	
+
+    <!-- 需要在页面中加入 -->
+	<script src="./common/front/js/m-placeholder.js"></script> 
+    <script src="./common/thirdParty/jquery.zclip/jquery.zclip.js"></script>
+	<script>
+
+   		/*我的账户导航滑动/展开 */
+   	$(function() {
+   		$("ul.expmenu li > div.li-header").click(function(){                                                  
+   		    var arrow = $(this).find("span.arrow"); 
+   		    if(arrow.hasClass("up")){
+   		        arrow.removeClass("up");
+   		        arrow.addClass("down");
+   		    }else if(arrow.hasClass("down")){
+   		        arrow.removeClass("down");
+   		        arrow.addClass("up");
+   		    }   
+   		    $(this).parent().find("ul.menu").slideToggle();     
+   		}); 
+   		var leftNav = $("#leftNav").val();
+   		var leftTitle=$("#leftTitle").val();
+   		$("#"+leftNav).find("span").removeClass("down");
+   		$("#"+leftNav).find("span").addClass("up");
+   		$("#"+leftTitle).css("color","#11A2FE");
+   		$("#"+leftNav).parent().find("ul.menu").show(); 		
+   	});
+
+    $('#btn_copyLink').zclip({
+
+      path: './common/thirdParty/jquery.zclip/ZeroClipboard.swf',
+      copy: function() {
+        return $('#hf_spread_link').val();
+      },
+      afterCopy: function(){
+        alert('链接复制成功！');
+      }
+    });
+
+
+	</script>
+</body>
+</html>
